@@ -26,7 +26,11 @@ function numberOfOccurencesInText(word, text) {
   return wordCount;
 }
 
-function omitBadWords(word, text) {
-  if (text.trim().length === 0) {
-    return 0;
-  
+function omitBadWords(text) {
+  let wordArray = text.split(" ");
+  const badWords = ["zoinks", "muppeteers", "biffaroni", "loopdaloop"];
+  badWords.forEach(function(element){
+    wordArray = wordArray.filter(word => word.toLowerCase() !== element.toLowerCase());
+  });
+  return wordArray;
+}
