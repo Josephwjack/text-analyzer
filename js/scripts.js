@@ -42,6 +42,25 @@ function omitBadWords(text) {
   });
   return wordArray;
 }
+
+function uniqueWords (text) {
+  let wordArray = text.split(" ");
+  let amountUsed = [];
+  let freq = [];
+  wordArray.forEach(function(element) {
+    if (!amountUsed.includes(element.toLowerCase())) {
+      amountUsed.push(element.toLowerCase());
+    }
+  }); console.log (amountUsed);
+  amountUsed.forEach(function(element2, index) {
+    freq[index] = [0];
+    wordArray.forEach(function(element1)  {
+    if (element1.toLowerCase() === element2) 
+    { freq[index]++ }
+    });
+  }); console.log (freq);
+}
+// uniqueWords("Hi there hey yo hi hi yay yo whoa there whoa yay");
 // UI Logic
 
 function boldPassage(word, text) {

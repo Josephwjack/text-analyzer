@@ -106,3 +106,10 @@ const word = "hello";
 const text = "hello there";
 boldPassage(word, text);
 Expected Output: "<p><b>hello</b> there</p>"
+
+Describe: uniqueWords()
+Test: "It should list the unique words from the text"
+Code:
+const text = "Hi there hey yo hi hi yay yo whoa there whoa yay"
+uniqueWords(text);
+Expected Output: "The expected output will be [hi, there, hey, yo, yay, whoa];
