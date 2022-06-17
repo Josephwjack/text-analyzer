@@ -1,3 +1,11 @@
+#_Text Analyzer program_
+
+## Description
+A basic text analyzer application built as during in-class in-class at Epicodus.
+
+##_Instruction_:
+*Git clone repo to your local terminal. Open in Live server.
+
 Describe: wordCounter()
 
 Test: "It should return 1 if a passage has just one word."
@@ -91,10 +99,8 @@ Code:
 const word = "hello";
 const text = "yo";
 boldPassage(word, text);
-Expected Output: "<p>yo</p>"
+Expected Output: "<p>yo</p>
 
-Test: "It should return a matching word in a b tag."
-Code:
 const word = "hello";
 const text = "hello";
 boldPassage(word, text);
